@@ -6,11 +6,6 @@ let hash = require('object-hash');
 module.exports = {
   validar:(req,res)=>{
     let parametros = req.allParams();
-    /* sails.log.info(req.method);
-    let parametros = req.allParams();
-    console.log(parametros);
-    console.log(parametros.usr);
-    console.log(parametros.pwd);*/
     let error="";
     if(!parametros.usr){
       error+="No ingreso usuario"
@@ -18,7 +13,6 @@ module.exports = {
     if(!parametros.pwd){
       error+=" No ingreso contraseña"
     }
-    //console.log(error);
     if(!error){
       //console.log("datos correctos");
         User.findOne({
