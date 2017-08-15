@@ -1,0 +1,37 @@
+
+<h1>Homepage</h1>
+
+
+<% var numero = 5 %>
+<% usuario.id = usuario.id + numero %>
+<% console.log("El id es:",usuario.id); %>
+<p><%= usuario[1].nombres %></p>
+<p><%= usuario[1].apellidos %></p>
+<p><%= usuario[1].id %></p>
+<p><%= usuario[1].id %></p>
+<ul>
+  <% for(var i=0; i<usuario.length; i++) {%>
+  <li><%= usuario[i].nombres %></li>
+  <li><%= usuario[i].apellidos %></li>
+  <li><%= usuario[i].password %></li>
+  <li><%= usuario[i].correo %></li>
+  <li><%= usuario[i].fechaNacimiento %></li>
+  <li><%= usuario[i].id %></li>
+
+  <% } %>
+</ul>
+<input type="text" value="<%= usuario.nombres %>">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
