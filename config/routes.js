@@ -35,8 +35,8 @@ module.exports.routes = {
 
   'get /': 'VistaController.homepage',
 
-  '/perfil':{
-    view:'UsuarioGestion/perfil'
+  '/pizza':{
+    view:'pizza'
   },
   '/registrarse':{
     view:'registrarse'
