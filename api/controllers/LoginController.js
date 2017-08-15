@@ -25,15 +25,13 @@ module.exports = {
                     // console.log("hash: ");
                     //console.log(aas);
                     if (finn.password == hash(parametros.pwd)) {
-                        return res.send("Datos correctos");
+                        return res.redirect("/pizza");
+                        // return res.send("Datos correctos");
                     }
                     else {
                         return res.send("Contraseña incorrecta");
                     }
                 }
-                //sails.log('Found "%s"', finn.usuario);
-                //console.log(finn);
-                // return res.json(finn);
             });
         }
         else {
