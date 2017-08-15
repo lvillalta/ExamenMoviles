@@ -1,135 +1,4 @@
 <style>
-  body
-  {
-    width:64em;
-    background-color:#EEEEEE;
-    font-family:Arial, Helvetica, sans-serif;
-    margin:auto;
-  }
-
-  nav
-  {
-    display:table;
-    table-layout:fixed;
-    width:100%;
-    background-color:#FFFFFF;
-    padding:0.75em 0.5em;
-    margin:0.625em auto 0.313em;
-  }
-
-  nav ul {display:table-row;}
-
-  nav ul li
-  {
-    display:table-cell;
-    text-align:center;
-  }
-
-  a {text-decoration:none;}
-
-  a:link, a:visited {color:#FF0000;}
-
-  a.current {color:#007700;}
-
-  a:hover {color:#0000FF;}
-
-  h1
-  {
-    display:inline-block;
-    font-size:1.875em;
-    font-weight:bold;
-    font-style:italic;
-    color:#336699;
-    text-shadow:0.125em 0.125em #FFFFFF;
-    border:0.125em solid #336699;
-    background-color:#99FF55;
-    padding:0.25em 1em;
-    margin:auto 0.313em 0.313em;
-  }
-
-  h2
-  {
-    font-weight:bold;
-    margin-bottom:1.250em;
-  }
-
-  h2.forms {font-size:1.5em;}
-
-  div.content
-  {
-    display:table;
-    width:100%;
-    padding-left:0.625em;
-  }
-
-  div section
-  {
-    display:table-cell;
-    padding-right:0.5em;
-  }
-
-  div.forms
-  {
-    display:table;
-    table-layout:fixed;
-    /*width:56.25em;*/
-    border:1px solid #AAAAAA;
-    border-radius:0.625em;
-    box-shadow:0em 0em 1em #000000;
-    padding:0.625em 0.625em 0.625em 0em;
-    margin:auto;
-  }
-
-  div.forms div
-  {
-    display:table-cell;
-  }
-
-  div.cell1 {text-align:center;}
-
-  div.forms2
-  {
-    width:23.75em;
-    border:1px solid #AAAAAA;
-    border-radius:0.625em;
-    padding:1.5em 1.5em;
-  }
-
-  div.forms h3
-  {
-    font-size:1.5em;
-    color:#336699;
-    text-shadow:0.063em 0.063em 0.063em #000000;
-  }
-
-  div.forms hr
-  {
-    border-top:0.063em solid #AA0000;
-    border-bottom:0.063em solid #FF0000;
-  }
-
-  div.forms p
-  {
-    color:#336699;
-    margin:2em 0em;
-  }
-
-  div.forms table
-  {
-    border:2px solid #000000;
-    margin:2em 1em;
-  }
-
-  div.forms table td
-  {
-    border:1px solid #000000;
-    padding:0.313em;
-  }
-
-  div.forms input[name=price]
-  {
-    margin:0.313em auto 4em;
-  }
 
   div.forms2 fieldset
   {
@@ -137,7 +6,6 @@
     padding:0.625em 0em;
     margin:0.25em auto;
   }
-
   div.forms2 legend
   {
     color:#FFFFFF;
@@ -146,222 +14,26 @@
     text-shadow:0em 0.188em 0.188em #000000;
     border:4px groove #FFB4BC;
   }
+</style>
+  <h1>
 
-  article p
-  {
-    line-height:1.5em;
-    margin-top:1.25em;
-  }
 
-  article.table
-  {
-    width:100%;
-    display:table;
-    table-layout:fixed;
-  }
 
-  .cell
-  {
-    display:table-cell;
-    vertical-align:top;
-    padding:0em 0.313em;
-  }
-
-  hr
-  {
-    border-top:0.063em solid #474747;
-    border-bottom:0.063em solid #D8D8D8;
-    margin:1.25em auto;
-  }
-
-  .underline {text-decoration:underline;}
-
-  figure
-  {
-    width:19.375em;
-    text-align:center;
-  }
-
-  figcaption
-  {
-    border:0.125em solid #000000;
-    padding:0.313em;
-    margin:0.625em auto 0.313em;
-  }
-
-  audio {margin-top:1em;}
-
-  aside
-  {
-    display:table-cell;
-    width:15.625em;
-    background-color:#EEEEEE;
-    border-top:1.375em solid #DDDDDD;
-    border-left:1.375em solid #DDDDDD;
-    padding:1.563em 1.375em;
-  }
-
-  aside ul {padding-left:1.375em;}
-
-  aside ul li {padding-bottom:0.75em;}
-
-  aside input[type=button]
-  {
-    width:9em;
-    font-style:italic;
-    text-align:center;
-    background-color:#99FF55;
-    border:0.25em double #000000;
-    border-radius:0.5em;
-    box-shadow:0em 0em 0.5em #000000;
-    padding:0.625em 0em;
-  }
-
-  footer
-  {
-    text-align:center;
-    color:#FFFFFF;
-    background-color:#000000;
-    padding:0.5em;
-    margin:1.625em auto;
-  }
-  </style>
-<head>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" type="text/css" href="css/reset.css" />
-  <link rel="stylesheet" type="text/css" href="https://github.com/Markieta/pizza-order-form/blob/master/css/mycss.css" />
-</head>
-
-<body>
-<nav>
-  <ul>
-    <li><a href="../">Zenit Account</a></li>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="gallery.html">Photo Gallery</a></li>
-    <li><a href="video.html">Video</a></li>
-    <li><a href="audio.html">Audio</a></li>
-    <li><a href="html5.html">HTML5</a></li>
-    <li><a class="current" href="forms.html">Forms</a></li>
-    <li><a href="other.html">Other</a></li>
-    <li><a href="css">CSS Used</a></li>
-  </ul>
-</nav>
-<h2 class="forms">Forms - will be used in Assignment #3</h2>
-<form method="post" name="forms"
-      action="index.html">
-  <div class="forms">
-    <div class="cell1">
-      <h3>Mama's<br />Pizza</h3>
-      <hr />
-      <p>416 or 905</p>
-      <p>222-6262</p>
-      <hr />
-      <table>
-        <tr>
-          <td>Small</td>
-          <td>$11.55</td>
-        </tr>
-        <tr>
-          <td>Medium</td>
-          <td>$15.25</td>
-        </tr>
-        <tr>
-          <td>Large</td>
-          <td>$22.00</td>
-        </tr>
-        <tr>
-          <td>X-Large</td>
-          <td>$25.00</td>
-        </tr>
-        <tr>
-          <td colspan="2">Toppings</td>
-        </tr>
-        <tr>
-          <td>$1.79</td>
-          <td>Each</td>
-        </tr>
-        <tr>
-          <td colspan="2">Plus 13% HST</td>
-        </tr>
-        <tr>
-          <td colspan="2">Free Delivery</td>
-        </tr>
-      </table>
-      Your Price<br />
-      <input name="price" size="8" readonly="readonly" />
+    <div class="container" id="control">
+      <h2 style="width:200px" >Compra de pizza</h2>
+      <br>
     </div>
+
+
     <div class="forms2">
-      <fieldset>
-        <legend>Personal Information</legend>
-        Name <input name="name" /><br />
-        Account No. <input type="number" name="account" /><br />
-        Phone No. <input type="tel" name="phone" /><br />
-        Date of Birth <input type="date" name="birthday" />
-      </fieldset>
-      <fieldset>
-        <legend>Pizza size &amp; Crust</legend>
-        <select name="size" size="2">
-          <option>Select Pizza Size</option>
-          <option value="1">Small</option>
-          <option value="2">Medium</option>
-          <option value="3">Large</option>
-          <option value="4">X-Large</option>
-        </select>
-        <select name="crust" size="2">
-          <option value="1">Regular Crust</option>
-          <option value="2">Thin Crust</option>
-        </select>
-      </fieldset>
-      <fieldset>
-        <legend>Cheeses</legend>
-        <input type="radio" name="cheese" value="1" />Mozzarella
-        <input type="radio" name="cheese" value="2" />Reduced Fat
-        <input type="radio" name="cheese" value="3" />Feta
-      </fieldset>
-      <fieldset>
-        <legend>Sauces</legend>
-        <input type="radio" name="sauce" value="1" />Pizza Sauce
-        <input type="radio" name="sauce" value="2" />BBQ Sauce
-        <input type="radio" name="sauce" value="3" />Garlic Sauce
-      </fieldset>
-      <fieldset>
-        <legend>Special Instructions</legend>
-        <textarea name="instructions" rows="3" cols="42"></textarea>
-      </fieldset>
-      <input type="submit" value="PLACE YOUR ORDER" />
-      <input type="reset" value="START OVER" />
-    </div>
+  <fieldset>
+    <legend>Seleccione los ingredientes para su pizza</legend>
     <div class="forms2">
-      <fieldset>
-        <legend>Choose Toppings - $1.79 Each</legend>
-        <div class="forms2">
-          <input type="checkbox" name="topping" value="1" /> Anchovies<br />
-          <input type="checkbox" name="topping" value="2" /> Bacon<br />
-          <input type="checkbox" name="topping" value="3" /> Ham<br />
-          <input type="checkbox" name="topping" value="4" /> Pepperoni<br />
-          <input type="checkbox" name="topping" value="5" /> Salami<br />
-          <input type="checkbox" name="topping" value="6" /> Sausage<br />
-        </div>
-        <div class="forms2">
-          <input type="checkbox" name="topping" value="7" /> Broccoli<br />
-          <input type="checkbox" name="topping" value="8" /> Green Olives<br />
-          <input type="checkbox" name="topping" value="9" /> Green Peppers<br />
-          <input type="checkbox" name="topping" value="10" /> Mushrooms<br />
-          <input type="checkbox" name="topping" value="11" /> Red Onions<br />
-          <input type="checkbox" name="topping" value="12" /> Roasted Garlic<br />
-        </div>
-      </fieldset>
+      <input type="checkbox" name="topping" value="1" /> Anchovies<br />
+      <input type="checkbox" name="topping" value="2" /> Bacon<br />
+      <input type="checkbox" name="topping" value="3" /> Ham<br />
+      <input type="checkbox" name="topping" value="4" /> Pepperoni<br />
+      <input type="checkbox" name="topping" value="5" /> Salami<br />
+      <input type="checkbox" name="topping" value="6" /> Sausage<br />
     </div>
-  </div>
-</form>
-<footer>
-  <section>
-    <script type="text/javascript">
-      //<![CDATA[
-      var dt=new Date(document.lastModified); // Get document last modified date
-      document.write('<p>This page was last updated on '+dt.toLocaleString()) + '</p>';
-      //]]>
-    </script>
-  </section>
-</footer>
-</body>
+  </fieldset>
