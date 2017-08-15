@@ -5,13 +5,13 @@
 
 #fuente{
   background-color: white;
-    
+
 }
 
 body{
-    
+
     background-color: #D8F6CE;
-    
+
 }
 
   #caja{
@@ -21,7 +21,7 @@ body{
    margin: 100px auto;
       padding: 5em;
       border-radius: 6px;
-      
+
   }
 
 #control{
@@ -33,34 +33,7 @@ ol {
     list-style: none;
 }
 
-.nav > li {
-    float: left;
-}
 
-.nav li a {
-    text-decoration: none;
-    padding: 10px 12px;
-    display: block;
-}
-
-.nav li ul {
-    display: none;
-    position: absolute;
-    min-width: 140px;
-}
-
-.nav li:hover > ul {
-    display: block;
-}
-
-.nav li ul li {
-    position: relative;
-}
-
-.nav li ul li ul {
-    right: -140px;
-    top: 0px;
-}
 
 ul {
     list-style-type: none;
@@ -124,9 +97,23 @@ li a:hover {
     margin-bottom: 150px;
     margin-right: 350px;
     font-size: 50px
-} 
+}
 .adicional{
     width: 500px;
     margin-left: 350px;
     font-size: 20px
+}
+div.forms2 fieldset
+{
+  border:0.25em outset #B2D8B2;
+  padding:0.625em 0em;
+  margin:0.25em auto;
+}
+div.forms2 legend
+{
+  color:#FFFFFF;
+  background-color:#99FF99;
+  font-weight:bold;
+  text-shadow:0em 0.188em 0.188em #000000;
+  border:4px groove #FFB4BC;
 }
